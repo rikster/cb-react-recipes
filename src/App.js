@@ -5,6 +5,7 @@ import ReactToggleButtonV1 from "./components/ReactToggleButtonV1";
 import ReactToggleButtonV2 from "./components/ReactToggleButtonV2";
 import ReactToggleButtonV3 from "./components/ReactToggleButtonV3";
 import ReactToggleButtonV4 from "./components/ReactToggleButtonV4";
+import ReactToggleButtonV5 from "./components/ReactToggleButtonV5";
 
 import "./App.css";
 
@@ -24,6 +25,8 @@ function App() {
           <Link to="/reacttogglebuttonV3">Toggle Button V3</Link>
           <br />
           <Link to="/reacttogglebuttonV4">Toggle Button V4</Link>
+          <br />
+          <Link to="/reacttogglebuttonV5">Toggle Button V5</Link>
         </div>
         <div className="container">
           <Switch>
@@ -52,6 +55,11 @@ function App() {
                 exact
                 path="/ReactToggleButtonV4"
                 component={ReactToggleButtonV4}
+            />
+            <Route
+                exact
+                path="/ReactToggleButtonV5"
+                component={ReactToggleButtonV5}
             />
           </Switch>
         </div>
